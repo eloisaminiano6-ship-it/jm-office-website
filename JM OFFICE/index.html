@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
+
 <body>
     <h1 id="maintitle">JM OFFICE AND SCHOOL SUPPLIES TRADING</h1>
     <p class="subtitle">Quality Printing • Signages • Trophies • School Supplies</p>
@@ -177,6 +179,7 @@
         <form action="https://formsubmit.co/eloisaminiano6@gmail.com" method="POST">
          <input type="hidden" name="_next" value="https://eloisaminiano6-ship-it.github.io/jm-office-website/">   
          <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="services" id="selected-services">
          <div class="form-contain">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -214,7 +217,7 @@
             <div class="pill-checkboxes">
                 <input 
                     type="checkbox"
-                    name="services"
+                    name="service"
                     id="t-shirt"
                     value="t-shirt">
                 <label for="t-shirt">T-Shirt Printing</label>
@@ -228,42 +231,42 @@
 
                 <input 
                     type="checkbox"
-                    name="servic"
+                    name="service"
                     id="signages"
                     value="signages">
                 <label for="signages">Signages</label>
 
                 <input 
                     type="checkbox"
-                    name="servi"
+                    name="service"
                     id="mug"
                     value="mug">
                 <label for="mug">Mug</label>
 
                 <input 
                     type="checkbox"
-                    name="serv"
+                    name="service"
                     id="medals"
                     value="medals">
                 <label for="medals">Medals</label>
 
                 <input 
                     type="checkbox"
-                    name="ser"
+                    name="service"
                     id="tarpaulin"
                     value="tarpaulin">
                 <label for="tarpaulin">Tarpaulin</label>
 
                 <input 
                     type="checkbox"
-                    name="se"
+                    name="service"
                     id="customized-trophies"
                     value="customized-trophies">
                 <label for="customized-trophies">Customized Trophies</label>
 
                 <input 
                     type="checkbox"
-                    name="s"
+                    name="service"
                     id="dtf-print"
                     value="dtf-print">
                 <label for="dtf-print">DTF Print</label>
@@ -280,7 +283,7 @@
                     <option value="facebook">Facebook</option>
                     <option value="instagram">Instagram</option>
                     <option value="youtube">Youtube</option>
-                    <option value="tiktok">Twitter</option>
+                    <option value="twitter">Twitter</option>
                     <option value="other">Other</option>
                 </select>
             </fieldset>
@@ -322,6 +325,28 @@
             <br>
         </form>
      <hr>
+
+<script>
+const form = document.querySelector("form");
+const checkboxes = document.querySelectorAll('input[name="service"]');
+const hiddenInput = document.getElementById("selected-services");
+
+form.addEventListener("submit", function () {
+    let selected = [];
+
+    checkboxes.forEach(function(box) {
+        if (box.checked) {
+            selected.push(box.value);
+        }
+
+        // Remove checkbox from submission
+        box.removeAttribute("name");
+    });
+
+    hiddenInput.value = selected.join(", ");
+});
+</script>
+
 </body>
 
     <footer>
