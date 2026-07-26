@@ -4,6 +4,7 @@ html {
 
 body {
     background-color: lightgray;
+    overflow-x:hidden;
 }
 
 #maintitle {
@@ -403,6 +404,11 @@ footer {
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .contact a {
