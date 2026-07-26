@@ -1,3 +1,14 @@
+/* ==========================================
+   1. RESET
+========================================== */
+* {
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   2. GLOBAL STYLES
+========================================== */
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,6 +17,90 @@ body {
     background-color: lightgray;
     overflow-x:hidden;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+hr {
+    border: 4px solid gray;
+}
+
+button,
+nav,
+h1,
+h2,
+h3,
+.logo {
+    user-select: none;
+}
+
+/* ==========================================
+  3. REUSABLE COMPONENTS
+========================================== */
+
+.navcontainer {
+    margin-top: 0;
+    background: linear-gradient(to left, darkslategray, dimgrey);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.service-container,
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.service-container {
+    margin-bottom: 50px;
+}
+
+.map-container {
+  width: 100% !important;    
+  max-width: 800px !important; 
+  height: 450px;
+  aspect-ratio: 4 / 3;        
+  margin: 0 auto;            
+  padding: 0 15px;            
+  box-sizing: border-box;    
+}
+
+.card {
+    max-width: 400px;
+    width: 90%;
+    height: auto;
+    background: linear-gradient(to right, gray, dimgray);
+    padding: 9px;
+    transition: .3s ease;
+    border-radius: 10px;
+}
+
+.button-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.form-contain {
+    max-width: 90%;
+    text-decoration: none;
+    background: linear-gradient(to right, gray, dimgray);
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 12px;
+    color: beige;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ==========================================
+  4. TYPOGRAPHY
+========================================== */
 
 #maintitle {
     color:beige;
@@ -52,15 +147,6 @@ body {
     line-height: 30px;
 }
 
-.oglogo img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-
 .oglogo figcaption,
 .proprietor figcaption,
 .gallery-para {
@@ -72,6 +158,10 @@ body {
     background: linear-gradient(to right, gray, dimgray);
     border-radius: 5px;
 } 
+
+/* ==========================================
+  5. HEADER / NAVIGATION
+========================================== */
 
 .navhead,
 #home,
@@ -85,13 +175,6 @@ body {
     font-size: 35px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-}
-
-.navcontainer {
-    margin-top: 0;
-    background: linear-gradient(to left, darkslategray, dimgrey);
-    padding: 20px;
-    border-radius: 5px;
 }
 
 .navlinks {
@@ -118,8 +201,17 @@ body {
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
-hr {
-    border: 4px solid gray;
+/* ==========================================
+  6. HOME / ABOUT
+========================================== */
+
+.oglogo img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 .proprietor img {
@@ -133,17 +225,36 @@ hr {
     box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
-.service-container,
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
+/* ==========================================
+  7. SERVICES
+========================================== */
+
+.card h3 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
 
-.service-container {
-    margin-bottom: 50px;
+.card p {
+    font-size: 1.5rem;
+    color:ghostwhite;
+    text-align: center;
 }
+
+.card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+/* ==========================================
+  8. GALLERY
+========================================== */
 
 .image-cards,
 .image-cards figure {
@@ -181,48 +292,9 @@ hr {
     font-weight: normal;
 }
 
-.card {
-    max-width: 400px;
-    width: 90%;
-    height: auto;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 9px;
-    transition: .3s ease;
-    border-radius: 10px;
-}
-
-.card h3 {
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card p {
-    font-size: 1.5rem;
-    color:ghostwhite;
-    text-align: center;
-}
-
-.card:hover {
-    transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
-    cursor: pointer;
-}
-
-.card a {
-    text-decoration: none;
-}
-
-.map-container {
-  width: 100% !important;     /* Pinipilit na sumunod sa lapad ng phone */
-  max-width: 800px !important; /* Limitasyon sa malaking screen */
-  height: 450px;
-  aspect-ratio: 4 / 3;        /* Awtomatikong inaayos ang taas base sa phone screen */
-  margin: 0 auto;             /* Nilalagay sa gitna */
-  padding: 0 15px;            /* Nag-iiwan ng kaunting espasyo sa gilid ng phone */
-  box-sizing: border-box;     /* Sinesiguro na kasama ang padding sa sukat */
-}
+/* ==========================================
+  9. LOCATION
+========================================== */
 
 .map-container iframe {
   width: 100% !important;
@@ -252,27 +324,20 @@ hr {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.form-contain {
-    max-width: 90%;
-    text-decoration: none;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: beige;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+/* ==========================================
+  10. CONTACT FORM
+========================================== */
 
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-  background-color: #333333; /* Binabago ang kulay ng loob ng kahon (hal. itim) */
-  color: white;              /* Kulay ng teksto kapag nag-type ka na */
-  border: 2px solid grey; /* Binabago ang linya sa gilid (kapal, estilo, kulay) */
-  border-radius: 5px;        /* Pinapakurba ang mga kanto ng kahon */
-  padding: 8px 12px;         /* Nagdaragdag ng espasyo sa loob para lumaki ang kahon */
-  font-size: 16px;           /* Laki ng teksto sa loob */
-  outline: none;             /* Inaalis ang default na asul na highlight ng browser */
+  background-color: #333333; 
+  color: white;              
+  border: 2px solid grey;
+  border-radius: 5px;        
+  padding: 8px 12px;         
+  font-size: 16px;           
+  outline: none;            
 }
 
 input::placeholder {
@@ -360,12 +425,10 @@ input::placeholder {
 }
 
 select {
-  /* Inaalis ang lumang default na arrow ng browser */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
-  /* Disenyo ng kahon */
   width: 100%;
   padding: 15px;
   font-size: 20px;
@@ -382,120 +445,6 @@ select {
 select:hover {
  background-color: darkgrey; 
  box-shadow:0 12px 25px rgba(0,0,0,.25);
-}
-
-footer {
-    padding: 0;
-    background: transparent;
-}
-
-.contact {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to left, gray, dimgray);
-    padding: 9px;
-    transition: .3s ease;
-    border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-
-    .contact {
-        padding: 20px;
-        font-size: 1rem;
-    }
-
-    .contact a {
-        padding: 10px 15px;
-        font-size: 1rem;
-    }
-
-}
-
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.contact a {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 10px;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 9px;
-    transition: all 0.25s ease;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
-    color:aliceblue;
-    white-space: nowrap;
-    margin: 10px;
-}
-
-.contact a:hover {
-    padding: 14px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.contact p {
-    font-size: 1.5rem;
-    color:ghostwhite;
-    text-align: center;
-}
-
-.HTML {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 500px;
-    font-size: 20px;
-    height: auto;
-    text-align: center;
-    color:white;
-    margin-top: 0;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 9px;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
-    border-radius: 10px;
-}
-
-.CSS {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 500px;
-    font-size: 20px;
-    height: auto;
-    text-align: center;
-    color:white;
-    margin-top: 50px;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 9px;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
-    border-radius: 10px;
-}
-
-.copyright {
-    color:black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    text-align: center;
-}
-
-.button-options {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
 }
 
 .submit > button {
@@ -536,17 +485,109 @@ img {
     box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
-button,
-img,
-nav,
-h1,
-h2,
-h3,
-.logo {
-    user-select: none;
+/* ==========================================
+  11. CONTACT INFORMATION
+========================================== */
+.contact {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to left, gray, dimgray);
+    padding: 9px;
+    transition: .3s ease;
+    border-radius: 10px;
 }
 
-img {
-    user-select: none;
-    -webkit-user-drag: none;
+
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, gray, dimgray);
+    padding: 9px;
+    transition: all 0.25s ease;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    color:aliceblue;
+    white-space: nowrap;
+    margin: 10px;
+}
+
+.contact a:hover {
+    padding: 14px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact p {
+    font-size: 1.5rem;
+    color:ghostwhite;
+    text-align: center;
+}
+
+/* ==========================================
+  12. FOOTER
+========================================== */
+footer {
+    padding: 0;
+    background: transparent;
+}
+.copyright {
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.HTML {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    color:white;
+    margin-top: 0;
+    background: linear-gradient(to right, gray, dimgray);
+    padding: 9px;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    border-radius: 10px;
+}
+
+.CSS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    background: linear-gradient(to right, gray, dimgray);
+    padding: 9px;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    border-radius: 10px;
+}
+
+/* ==========================================
+  13. MEDIA QUERIES
+========================================== */
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .contact a {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
 }
