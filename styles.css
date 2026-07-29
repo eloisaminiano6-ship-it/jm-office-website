@@ -178,7 +178,7 @@ h3,
 }
 
 .navlinks {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
@@ -194,11 +194,31 @@ h3,
     color: beige;
     transition: all 0.25s ease;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
 }
 
 .navlinks a:hover {
     padding: 20px 26px;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navlinks a:hover::after {
+    transform: scaleX(1);
+}
+
+.navlinks a::after {
+    transition: transform 0.5s ease;
+    content: " ";
+    background-color:darkslategrey;
+    transform: scaleX(0);
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    display:block;
+    width: 80%;
+    height: 3px;
+    transform-origin: center;
+    border-radius:5px;
 }
 
 /* ==========================================
@@ -589,5 +609,4 @@ footer {
         padding: 10px 15px;
         font-size: 1rem;
     }
-
 }
