@@ -19,7 +19,6 @@ html {
 
 body {
     background-color: lightgray;
-    overflow-x:hidden;
 }
 
 img {
@@ -528,7 +527,7 @@ select {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: transform 0.25s ease;
     cursor: pointer;
     box-shadow:0 12px 25px rgba(0,0,0,.25);
