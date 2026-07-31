@@ -397,7 +397,8 @@ input::placeholder {
     display: none;
 }
 
-.pill-checkboxes label {
+.pill-checkboxes label,
+.options label  {
     display: inline-block;
     padding: 9px 20px;
     color: #333;
@@ -417,7 +418,7 @@ input::placeholder {
 }
 
 .last-option {
-    max-width: 90%;
+    max-width: 50%;
     text-decoration: none;
     background: linear-gradient(to right, gray, dimgray);
     padding: 15px;
@@ -425,21 +426,8 @@ input::placeholder {
     border-radius: 12px;
     color: beige;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.options label {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #333;
-    background-color:lightsteelblue;
-    transition: all .3s ease;
-    margin: 3px;
-    border-radius: 9999px;
-    font-size: 23px;
-    cursor: pointer;
-    user-select: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .pill-checkboxes label:hover,
@@ -475,6 +463,10 @@ input::placeholder {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.form-dropdown legend {
+    margin-bottom: 8px;
+}
+
 .pill-checkboxes {
     max-width:70%;
     text-decoration: none;
@@ -490,8 +482,6 @@ input::placeholder {
     padding-bottom: 5px;
 }
 
-
-
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -500,23 +490,18 @@ select {
   width: 100%;
   padding: 15px;
   font-size: 20px;
-  color:black;
+  color:white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  background: linear-gradient(to right, gray, dimgray);
-  border: 4px solid darkslategrey;
-  border-radius: 4px;
+  background-color: #333333;
+  border: 2px solid darkslategrey;
+  border-radius:5px;
   cursor: pointer;
-  transition: all .3s ease;
-}
-
-select:hover {
- background-color: darkgrey; 
- box-shadow:0 12px 25px rgba(0,0,0,.25);
+  box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
 .submit > button {
-    background-color: lime;
+    background-color:darkseagreen;
     color: white;
     width: 100%;
     max-width: 300px;
@@ -526,13 +511,14 @@ select:hover {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    transition: all 0.25s ease;
+    border-radius: 10px;
+    transition: transform 0.25s ease;
     cursor: pointer;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
 .reset > button {
-    background-color: red;
+    background-color:firebrick;
     color: white;
     width: 100%;
     max-width: 300px;
@@ -543,14 +529,14 @@ select:hover {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease;
     cursor: pointer;
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
 .submit button:hover,
 .reset button:hover {
-    transform: scale(1.1);
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    transform: scale(1.05);
 }
 
 /* ==========================================
@@ -676,5 +662,10 @@ footer {
 
     input[type="number"] {
      width: 40%;
+    }
+
+    .last-option,
+    .pill-checkboxes {
+        max-width: 100%;
     }
 }
