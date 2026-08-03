@@ -15,6 +15,7 @@ html, body{
 
 fieldset {
     width: 100%;
+    border: 2px solid #1F3A5F;
 }
 
 html {
@@ -100,15 +101,61 @@ h3,
 .form-contain {
     max-width: 50%;
     text-decoration: none;
-    background: linear-gradient(to right, gray, dimgray);
+    background-color: #C9D7E5;
+    border-left:8px solid #1F4E8C;
     padding: 15px;
     font-size: 25px;
     border-radius: 12px;
-    color: beige;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1F3A5F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
     margin-left: auto;
     margin-right: auto;
+}
+
+.pill-checkboxes {
+    max-width:70%;
+    text-decoration: none;
+    background-color: #C9D7E5;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 12px;
+    color: #1F3A5F;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding-bottom: 5px;
+    border-left:8px solid #1F4E8C;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-dropdown {
+    max-width: 90%;
+    text-decoration: none;
+    background-color: #C9D7E5;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 12px;
+    color: #1F3A5F;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left:8px solid #1F4E8C;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.last-option {
+    max-width: 50%;
+    text-decoration: none;
+    background-color: #C9D7E5;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 12px;
+    color: #1F3A5F;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:auto;
+    margin-right: auto;
+     border-left:8px solid #1F4E8C;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 /* ==========================================
   4. TYPOGRAPHY
@@ -411,25 +458,64 @@ h3,
   10. CONTACT FORM
 ========================================== */
 
+.oglogo a:focus,
+.service-container a:focus,
+.card a:focus,
+.submit:focus,
+.reset:focus {
+    outline: none;
+}
+
+input:focus,
+select:focus,
+.oglogo a:focus img,
+.navcontainer a:focus,
+.card a:focus h3,
+.submit button:focus,
+.reset button:focus {
+    outline:none;
+    border:3px solid #1F4E8C;
+    box-shadow:0 0 0 4px rgba(31,78,140,.18);
+    transition:.25s ease;
+}
+
+.card a:focus h3 {
+    border-radius: 10px;
+}
+
 input[type="text"],
 input[type="email"] {
   width: 100%;
-  background-color: #333333; 
-  color: white;              
-  border: 2px solid grey;
+  background-color:#5A8FD8; 
+  color: white;          
+   border:2px solid transparent; 
   border-radius: 5px;
   padding: 8px;        
   font-size: 16px;           
-  outline: none;            
+  outline: none;        
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder {
+    color:#f3f7fc;
+    font-style:italic;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover {
+    border: 2px solid #1F4E8C;
 }
 
 input[type="number"] {
- width: 100%;
- display: block;
+width: 100%;
+display: block;
   max-width: 120px;
-  background-color: #333333; 
+  background-color: #5A8FD8; 
+  border:2px solid transparent; 
   color: white;              
-  border: 2px solid grey;
+  border: 2px solid transparent;
   border-radius: 5px;
   padding: 8px;        
   font-size: 16px;           
@@ -439,13 +525,8 @@ input[type="number"] {
 .label-info {
     display: inline-block;
     width: 25%;
-    margin: 0;
+    margin: 5px;
     white-space: nowrap;
-}
-
-input::placeholder {
-    color: white;
-    opacity: 1;
 }
 
 .pill-checkboxes input[type="checkbox"],
@@ -457,12 +538,12 @@ input::placeholder {
 .options label  {
     display: inline-block;
     padding: 9px 20px;
-    color: #333;
-    background-color:lightsteelblue;
+    color:#DCE8F5;
+    background-color:#5A8FD8;
     transition: all .3s ease;
     margin: 3px;
     border-radius: 9999px;
-    font-size: 20px;
+    font-size: 1.3rem;
     cursor: pointer;
     user-select: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -473,22 +554,10 @@ input::placeholder {
     margin-bottom: 10px;
 }
 
-.last-option {
-    max-width: 50%;
-    text-decoration: none;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: beige;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left:auto;
-    margin-right: auto;
-}
-
 .pill-checkboxes label:hover,
 .options label:hover {
-    background-color:lightslategrey; 
+    background:#6C9BD9;
+    box-shadow:0 4px 12px rgba(31,78,140,.15);
     transform: scale(1);
 }
 
@@ -499,43 +568,12 @@ input::placeholder {
 
 .pill-checkboxes input[type="checkbox"]:checked + label,
 .options input[type="radio"]:checked + label {
-    background-color: white;
-    color:black
+    background-color:#1F4E8C;
 }
 
 .options input[type="radio"]:checked + label {
-    background-color:black;
-    color:white;
-}
-
-.form-dropdown {
-    max-width: 90%;
-    text-decoration: none;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: beige;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.form-dropdown legend {
-    margin-bottom: 8px;
-}
-
-.pill-checkboxes {
-    max-width:70%;
-    text-decoration: none;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: beige;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    padding-bottom: 5px;
+    background-color:#1F4E8C;
+    color:#DCE8F5;
 }
 
 select {
@@ -549,15 +587,15 @@ select {
   color:white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  background-color: #333333;
-  border: 2px solid darkslategrey;
+  background-color: #5A8FD8;
   border-radius:5px;
   cursor: pointer;
-  box-shadow:0 12px 25px rgba(0,0,0,.25);
+  border: none;
+  border:3px solid transparent;
 }
 
-.submit > button {
-    background-color:darkseagreen;
+.submit button {
+    background-color:#1F4E8C;
     color: white;
     width: 100%;
     max-width: 300px;
@@ -568,14 +606,13 @@ select {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    transition: transform 0.25s ease;
+    transition: all 0.25s ease;
     cursor: pointer;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
 }
 
-.reset > button {
-    background-color:firebrick;
-    color: white;
+.reset button {
+    background-color:#DCE8F5;
+    color: #1F4E8C;
     width: 100%;
     max-width: 300px;
     font-size: 30px;
@@ -585,14 +622,19 @@ select {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    transition: transform 0.25s ease;
+    transition: all 0.25s ease;
     cursor: pointer;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    border:2px solid #1F4E8C;
 }
 
-.submit button:hover,
+.submit button:hover {
+    background-color: #2E6BB5;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(31,78,140,.25);
+}
+
 .reset button:hover {
-    transform: scale(1.05);
+    background:#C9DDF2;
 }
 
 /* ==========================================
