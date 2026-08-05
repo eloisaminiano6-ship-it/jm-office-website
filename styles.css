@@ -9,8 +9,9 @@
    2. GLOBAL STYLES
 ========================================== */
 
-html, body{
-    overflow-x:hidden;
+html,
+body {
+    overflow-x: hidden;
 }
 
 fieldset {
@@ -52,7 +53,7 @@ h3,
 
 .navcontainer {
     margin-top: 0;
-    background: linear-gradient(135deg,  #1F3A5F, #2C5A87);
+    background: linear-gradient(135deg, #1F3A5F, #2C5A87);
     padding: 20px;
     border-radius: 5px;
 }
@@ -70,21 +71,21 @@ h3,
 }
 
 .map-container {
-  width: 100% !important;    
-  max-width: 800px !important; 
-  height: 450px;
-  aspect-ratio: 4 / 3;        
-  margin: 0 auto;            
-  padding: 0 15px;            
-  box-sizing: border-box;    
+    width: 100% !important;
+    max-width: 800px !important;
+    height: 450px;
+    aspect-ratio: 4 / 3;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .card {
     max-width: 370px;
     width: 90%;
     height: auto;
-    background:  #C9D7E5;
-    border-left:8px solid #1F4E8C;
+    background: #C9D7E5;
+    border-left: 8px solid #1F4E8C;
     padding: 20px;
     transition: .3s ease;
     border-radius: 10px;
@@ -102,7 +103,7 @@ h3,
     max-width: 50%;
     text-decoration: none;
     background-color: #C9D7E5;
-    border-left:8px solid #1F4E8C;
+    border-left: 8px solid #1F4E8C;
     padding: 15px;
     font-size: 25px;
     border-radius: 12px;
@@ -114,19 +115,19 @@ h3,
 }
 
 .pill-checkboxes {
-    max-width:70%;
+    max-width: 70%;
     text-decoration: none;
     background-color: #C9D7E5;
     padding: 15px;
     font-size: 25px;
     border-radius: 12px;
     color: #1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
     padding-bottom: 5px;
-    border-left:8px solid #1F4E8C;
+    border-left: 8px solid #1F4E8C;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -138,8 +139,8 @@ h3,
     font-size: 25px;
     border-radius: 12px;
     color: #1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-left:8px solid #1F4E8C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left: 8px solid #1F4E8C;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -151,10 +152,10 @@ h3,
     font-size: 25px;
     border-radius: 12px;
     color: #1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
     margin-right: auto;
-     border-left:8px solid #1F4E8C;
+    border-left: 8px solid #1F4E8C;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -163,16 +164,16 @@ h3,
 .email-account a,
 .business-container p,
 .facebook-account a {
-    background-color:#5A8FD8;
+    background-color: #5A8FD8;
     padding: 15px;
     border-radius: 10px;
     font-size: 22px;
     text-align: center;
     font-weight: 400;
-    color:#C9DDF2;
+    color: #C9DDF2;
     font-family: 'Segoe UI', sans-serif;
-     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-     margin-top: 45px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 45px;
 }
 
 .address-container p {
@@ -194,7 +195,7 @@ h3,
 
 .email-account a:hover,
 .facebook-account a:hover {
-    transform:translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .contact-infos h3 {
@@ -209,7 +210,7 @@ h3,
 .email-container p,
 .facebook-container p {
     font-size: 18px;
-    color:#1F4E8C;
+    color: #1F4E8C;
     text-align: center;
     line-height: 1.7;
     font-family: Arial, sans-serif;
@@ -225,62 +226,59 @@ h3,
     max-width: 370px;
     width: 90%;
     height: auto;
-    background:  #C9D7E5;
-    border-left:8px solid #1F4E8C;
+    background: #C9D7E5;
+    border-left: 8px solid #1F4E8C;
     padding: 20px;
     transition: .3s ease;
     border-radius: 10px;
     margin-bottom: 18px;
     display: block;
 }
+
 /* ==========================================
   4. TYPOGRAPHY
 ========================================== */
 
 #maintitle {
     color: #1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     padding: 20px 0;
     text-align: center;
     border-radius: 5px;
     background: linear-gradient(to bottom, #ffffff, #eef5fc);
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 
 .subtitle {
-    color:#1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1F3A5F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     padding: 15px;
     text-align: center;
-    background: linear-gradient(
-    to right,
-    #f3f7fc,
-    #e7eff9
-);
+    background: linear-gradient(to right,
+            #f3f7fc,
+            #e7eff9);
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 
 .history {
-    color:#1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1F3A5F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5rem;
     padding: 15px;
     text-align: center;
-    background: linear-gradient(
-    to right,
-    #f3f7fc,
-    #e7eff9
-);
+    background: linear-gradient(to right,
+            #f3f7fc,
+            #e7eff9);
     border-radius: 5px;
-     box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 
 .para {
-    color:#3F3F3F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3F3F3F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.6rem;
     padding: 31px;
     text-align: left;
@@ -295,17 +293,15 @@ h3,
 .gallery-para {
     text-align: center;
     color: #1F3A5F;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     font-size: 25px;
-    background: linear-gradient(
-    to right,
-    #f3f7fc,
-    #e7eff9
-);
+    background: linear-gradient(to right,
+            #f3f7fc,
+            #e7eff9);
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
-} 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
 
 /* ==========================================
   5. HEADER / NAVIGATION
@@ -321,7 +317,7 @@ h3,
     text-align: center;
     color: #1F3A5F;
     font-size: 48px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 35px;
 }
 
@@ -335,13 +331,13 @@ h3,
 .navlinks a {
     max-width: 90%;
     text-decoration: none;
-    background-color:#DCE3EB;
+    background-color: #DCE3EB;
     padding: 15px 16px;
     font-size: 25px;
     border-radius: 12px;
-    color:#1F4E8C;
+    color: #1F4E8C;
     transition: all 0.25s ease;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
 }
 
@@ -357,23 +353,23 @@ h3,
 .navlinks a::after {
     transition: transform 0.5s ease;
     content: " ";
-    background-color:#1F4E8C;
+    background-color: #1F4E8C;
     transform: scaleX(0);
     position: absolute;
     left: 10%;
     bottom: 0;
-    display:block;
+    display: block;
     width: 80%;
     height: 3px;
     transform-origin: center;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 /* ==========================================
   6. HOME / ABOUT
 ========================================== */
 
-.oglogo img{
+.oglogo img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -390,7 +386,7 @@ h3,
     height: auto;
     width: 500px;
     border-radius: 10px;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .25);
 }
 
 /* ==========================================
@@ -407,7 +403,7 @@ h3,
 
 .card p {
     font-size: 18px;
-    color:#2F3A45;
+    color: #2F3A45;
     text-align: center;
     line-height: 1.7;
     font-family: Arial, sans-serif;
@@ -415,8 +411,8 @@ h3,
 }
 
 .card:hover {
-    transform:translateY(-8px);
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .25);
     cursor: pointer;
 }
 
@@ -436,7 +432,7 @@ h3,
     background-color: #D9E4F2;
     padding: 0;
     margin: 0;
-    overflow:hidden;
+    overflow: hidden;
     transition: transform 0.3s ease;
     border-left: 6px solid #1F4E8C;
     border-radius: 0 0 12px 12px;
@@ -444,7 +440,7 @@ h3,
 
 .image-cards:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
 
@@ -458,7 +454,7 @@ h3,
 
 .image-cards figcaption {
     font-size: 17px;
-    padding:18px 22px;
+    padding: 18px 22px;
     line-height: 1.6;
     color: #2C2C2C;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -469,45 +465,45 @@ h3,
   9. LOCATION
 ========================================== */
 
-.location-card{
-    width:90%;
-    max-width:500px;
-    margin:30px auto;
-    background:#DCE8F5;
-    border-left:8px solid #1F4E8C;
-    border-radius:12px;
-    padding:20px;
-    box-sizing:border-box;
-    box-shadow:0 8px 18px rgba(0,0,0,.15);
+.location-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    background: #DCE8F5;
+    border-left: 8px solid #1F4E8C;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
 }
 
-.location-card h3{
-    color:#1F4E8C;
-    margin-bottom:10px;
+.location-card h3 {
+    color: #1F4E8C;
+    margin-bottom: 10px;
     font-family: 'Segoe UI', sans-serif;
     font-size: 20px;
 }
 
-.location-card p{
-    color:#333;
-    line-height:1.6;
+.location-card p {
+    color: #333;
+    line-height: 1.6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.store-title{
-    text-align:center;
-    color:#1F4E8C;
-    font-size:2rem;
-    margin:25px 0 15px;
-    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+.store-title {
+    text-align: center;
+    color: #1F4E8C;
+    font-size: 2rem;
+    margin: 25px 0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.map-container{
-    width:100%;
-    max-width:900px;
-    margin:auto;
-    box-sizing:border-box;
-    padding:0 15px;
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .map-container iframe {
@@ -516,18 +512,18 @@ h3,
     height: 400px;
 }
 
-.real-location{
-    width:100%;
+.real-location {
+    width: 100%;
 }
 
-.real-location img{
-    width:100%;
-    max-width:375px ;
-    height:auto;
-    display:block;
-    margin:0 auto;
-    border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,.15);
+.real-location img {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
 }
 
 /* ==========================================
@@ -549,10 +545,10 @@ select:focus,
 .card a:focus h3,
 .submit button:focus,
 .reset button:focus {
-    outline:none;
-    border:3px solid #1F4E8C;
-    box-shadow:0 0 0 4px rgba(31,78,140,.18);
-    transition:.25s ease;
+    outline: none;
+    border: 3px solid #1F4E8C;
+    box-shadow: 0 0 0 4px rgba(31, 78, 140, .18);
+    transition: .25s ease;
 }
 
 .card a:focus h3 {
@@ -561,21 +557,21 @@ select:focus,
 
 input[type="text"],
 input[type="email"] {
-  width: 100%;
-  background-color:#5A8FD8; 
-  color: white;          
-   border:2px solid transparent; 
-  border-radius: 5px;
-  padding: 8px;        
-  font-size: 16px;           
-  outline: none;        
+    width: 100%;
+    background-color: #5A8FD8;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder {
-    color:#f3f7fc;
-    font-style:italic;
+    color: #f3f7fc;
+    font-style: italic;
 }
 
 input[type="text"]:hover,
@@ -585,17 +581,17 @@ input[type="number"]:hover {
 }
 
 input[type="number"] {
-width: 100%;
-display: block;
-  max-width: 120px;
-  background-color: #5A8FD8; 
-  border:2px solid transparent; 
-  color: white;              
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 8px;        
-  font-size: 16px;           
-  outline: none;  
+    width: 100%;
+    display: block;
+    max-width: 120px;
+    background-color: #5A8FD8;
+    border: 2px solid transparent;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
 }
 
 .label-info {
@@ -611,11 +607,11 @@ display: block;
 }
 
 .pill-checkboxes label,
-.options label  {
+.options label {
     display: inline-block;
     padding: 9px 20px;
-    color:#DCE8F5;
-    background-color:#5A8FD8;
+    color: #DCE8F5;
+    background-color: #5A8FD8;
     transition: all .3s ease;
     margin: 3px;
     border-radius: 9999px;
@@ -632,8 +628,8 @@ display: block;
 
 .pill-checkboxes label:hover,
 .options label:hover {
-    background:#6C9BD9;
-    box-shadow:0 4px 12px rgba(31,78,140,.15);
+    background: #6C9BD9;
+    box-shadow: 0 4px 12px rgba(31, 78, 140, .15);
     transform: scale(1);
 }
 
@@ -642,43 +638,43 @@ display: block;
     transform: scale(1.08)
 }
 
-.pill-checkboxes input[type="checkbox"]:checked + label,
-.options input[type="radio"]:checked + label {
-    background-color:#1F4E8C;
+.pill-checkboxes input[type="checkbox"]:checked+label,
+.options input[type="radio"]:checked+label {
+    background-color: #1F4E8C;
 }
 
-.options input[type="radio"]:checked + label {
-    background-color:#1F4E8C;
-    color:#DCE8F5;
+.options input[type="radio"]:checked+label {
+    background-color: #1F4E8C;
+    color: #DCE8F5;
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
-  width: 100%;
-  padding: 15px;
-  font-size: 20px;
-  color:white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-  background-color: #5A8FD8;
-  border-radius:5px;
-  cursor: pointer;
-  border: none;
-  border:3px solid transparent;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #5A8FD8;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    border: 3px solid transparent;
 }
 
 .submit button {
-    background-color:#1F4E8C;
+    background-color: #1F4E8C;
     color: white;
     width: 100%;
     max-width: 300px;
     font-size: 30px;
     height: auto;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -687,30 +683,30 @@ select {
 }
 
 .reset button {
-    background-color:#DCE8F5;
+    background-color: #DCE8F5;
     color: #1F4E8C;
     width: 100%;
     max-width: 300px;
     font-size: 30px;
     height: auto;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     border: none;
     border-radius: 10px;
     transition: all 0.25s ease;
     cursor: pointer;
-    border:2px solid #1F4E8C;
+    border: 2px solid #1F4E8C;
 }
 
 .submit button:hover {
     background-color: #2E6BB5;
-    transform:translateY(-2px);
-    box-shadow:0 8px 18px rgba(31,78,140,.25);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(31, 78, 140, .25);
 }
 
 .reset button:hover {
-    background:#C9DDF2;
+    background: #C9DDF2;
 }
 
 /* ==========================================
@@ -738,8 +734,8 @@ select {
     background: linear-gradient(to right, gray, dimgray);
     padding: 9px;
     transition: transform 0.25s ease;
-    box-shadow:0 12px 25px rgba(0,0,0,.25);
-    color:aliceblue;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .25);
+    color: aliceblue;
     white-space: nowrap;
     margin: 10px;
 }
@@ -750,7 +746,7 @@ select {
 
 .contact p {
     font-size: 1.5rem;
-    color:ghostwhite;
+    color: ghostwhite;
     text-align: center;
 }
 
@@ -763,12 +759,13 @@ footer {
 }
 
 .copyright {
-    width:100%;
-    color:black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     text-align: center;
 }
+
 /* ==========================================
   13. MEDIA QUERIES
 ========================================== */
@@ -785,29 +782,29 @@ footer {
     }
 
     .subtitle {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    padding: 12px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 12px;
 
-    .map-container{
-        width:100%;
-    }
+        .map-container {
+            width: 100%;
+        }
 
-    .map-container iframe{
-        width:100%;
-        height:280px;
-    }
+        .map-container iframe {
+            width: 100%;
+            height: 280px;
+        }
 
-    .real-location img{
-        width:100%;
-        max-width:100%;
-        height:auto;
-    }
+        .real-location img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
 
-    .location-card{
-        width:90%;
+        .location-card {
+            width: 90%;
+        }
     }
-}
 }
 
 @media (max-width: 1024px) {
@@ -816,17 +813,17 @@ footer {
     }
 
     .label-info {
-    display: block;
-    width: auto;
+        display: block;
+        width: auto;
     }
 
     input[type="text"],
     input[type="email"] {
-    display: block;     
+        display: block;
     }
 
     input[type="number"] {
-     width: 40%;
+        width: 40%;
     }
 
     .last-option,
