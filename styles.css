@@ -8,6 +8,11 @@
 /* ==========================================
    2. GLOBAL STYLES
 ========================================== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
 
 html,
 body {
@@ -52,10 +57,15 @@ h3,
 ========================================== */
 
 .navcontainer {
-    margin-top: 0;
-    background: linear-gradient(135deg, #1F3A5F, #2C5A87);
-    padding: 20px;
-    border-radius: 5px;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 0 30px;
 }
 
 .service-container,
@@ -307,62 +317,107 @@ h3,
   5. HEADER / NAVIGATION
 ========================================== */
 
-.navhead,
 #home,
 #services,
 #gallery,
 #location,
-#contactform,
-#contactinfo {
-    text-align: center;
+#contactform {
+    scroll-margin-top: 90px;
+}
+
+#home h2,
+#services h2,
+#gallery h2,
+#location h2,
+#contactform h2 {
+     text-align: center;
     color: #1F3A5F;
     font-size: 48px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 35px;
 }
 
-.navlinks {
-    display: flex !important;
-    flex-wrap: wrap;
+nav{
+    background:#1F4E8C;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    margin:0 0 25px 0;
+    padding:14px 0;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 55px;
+    width: auto;
+    display: block;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.brand {
+    display: flex;
+    align-items: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
+}
+
+.brand-text h2 {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.brand-text p {
+    color: #dbe8ff;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 11px;
+    letter-spacing: .5px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navlinks a {
-    max-width: 90%;
-    text-decoration: none;
-    background-color: #DCE3EB;
-    padding: 15px 16px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: #1F4E8C;
-    transition: all 0.25s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: relative;
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    padding:12px 18px;
+    border-radius:8px;
+    transition: transform .25s ease;
+    font-size: 18px;
+    letter-spacing: .3px;
 }
 
-.navlinks a:hover {
-    padding: 20px 26px;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.navlinks a:hover::after {
-    transform: scaleX(1);
-}
-
-.navlinks a::after {
-    transition: transform 0.5s ease;
-    content: " ";
-    background-color: #1F4E8C;
-    transform: scaleX(0);
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-    display: block;
-    width: 80%;
-    height: 3px;
-    transform-origin: center;
-    border-radius: 5px;
+.navlinks a:hover,
+.navlinks a:focus {
+    background: #5A8FD8;
+    box-shadow:0 0 0 3px rgba(90,143,216,.25);
 }
 
 /* ==========================================
@@ -541,7 +596,6 @@ h3,
 input:focus,
 select:focus,
 .oglogo a:focus img,
-.navcontainer a:focus,
 .card a:focus h3,
 .submit button:focus,
 .reset button:focus {

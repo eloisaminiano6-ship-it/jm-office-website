@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>JM WEBSITE</title>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="image/favicon.png?v=5">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,6 +19,28 @@
     <!-- =========================
          HEADER
     ========================== -->
+     <nav>
+        <div class="navcontainer">
+            <div class="brand">
+                <a href="#home" class="nav-logo">
+                    <img src="image/logo.png" alt="JM Office Logo">
+                </a>
+
+                <div class="brand-text">
+                    <h2>JM Office</h2>
+                    <p>Printing & School Supplies</p>
+                </div>
+            </div>
+                <ol class="navlinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contactform">Contact</a></li>
+                </ol>
+        </div>
+    </nav>
+    <header>
     <h1 id="maintitle">JM OFFICE AND SCHOOL SUPPLIES TRADING</h1>
     <p class="subtitle">Quality Printing • Signages • Trophies • School Supplies</p>
     <figure class="oglogo">
@@ -26,22 +51,9 @@
         <figcaption>Your trusted partner for printing, signages, trophies, medals, school supplies, and customized
             promotional products.</figcaption>
     </figure>
+    </header>
+    <br>
     <hr>
-    <nav>
-        <h2 class="navhead">Navigation Links</h2>
-        <div class="navcontainer">
-            <div class="navlinks">
-                <p><a href="#home">Home</a></p>
-                <p><a href="#services">Services</a></p>
-                <p><a href="#gallery">Gallery</a></p>
-                <p><a href="#location">Location</a></p>
-                <p><a href="#contactform">Contact Form</a></p>
-                <p><a href="#contactinfo">Contact Information</a></p>
-            </div>
-        </div>
-    </nav>
-    <hr>
-
     <!-- =========================
          MAIN CONTENT
         ========================== -->
@@ -49,7 +61,8 @@
         <!-- =========================
          HOME SECTION
         ========================== -->
-        <h2 id="home">Home</h2>
+        <section id="home">
+        <h2>Home</h2>
         <h3 class="history">What is JM Office and School Supplies Trading?</h3>
         <p class="para">JM Office School Supplies Trading began in 2019 as Miniano Printing Services, offering souvenir
             printing, silk screen printing, and mural painting. As the business grew, it expanded its services and
@@ -67,12 +80,14 @@
             <figcaption>The Proprietor, Jeffry F. Miniano</figcaption>
         </figure>
         <hr>
+        </section>
 
 
         <!-- =========================
          SERVICES SECTION
         ========================== -->
-        <h2 id="services">Services</h2>
+        <section id="services">
+        <h2>Services</h2>
         <div class="service-container">
 
             <div class="card">
@@ -147,13 +162,14 @@
                     need uniforms or personalized designs, we make sure every print is made with quality.</p>
             </div>
         </div>
+        </section>
         <hr>
 
         <!-- =========================
          GALLERY SECTION
         ========================== -->
-
-        <h2 id="gallery">Gallery</h2>
+        <section id="gallery">
+        <h2>Gallery</h2>
         <p class="gallery-para">Take a look at some of our completed projects and
             the people behind JM Office and School Supplies Trading.</p>
 
@@ -206,13 +222,14 @@
                 </figcaption>
             </figure>
         </div>
+        </section>
 
         <hr>
         <!-- =========================
          LOCATION SECTION
         ========================== -->
-
-        <h2 id="location">Location</h2>
+        <section id="location">
+        <h2>Location</h2>
 
         <div class="map-container">
             <iframe
@@ -237,12 +254,13 @@
                 behind the Nagcarlan Public Market.
             </p>
         </div>
-
+        </section>
         <!-- =========================
          CONTACT FORM SECTION
         ========================== -->
         <hr>
-        <h2 id="contactform">Contact Form</h2>
+        <section id="contactform">
+        <h2>Contact Information</h2>
 
         <form action="https://formsubmit.co/eloisaminiano6@gmail.com" method="POST">
             <input type="hidden" name="_next" value="https://eloisaminiano6-ship-it.github.io/jm-office-website/">
@@ -335,36 +353,9 @@
             <br>
         </form>
         <hr>
+        <br>
 
-        <!-- =========================
-         JAVA SCRIPT
-        ========================== -->
-        <script>
-            const form = document.querySelector("form");
-            const checkboxes = document.querySelectorAll('input[name="service"]');
-            const hiddenInput = document.getElementById("selected-services");
-
-            form.addEventListener("submit", function () {
-                let selected = [];
-
-                checkboxes.forEach(function (box) {
-                    if (box.checked) {
-                        selected.push(box.value);
-                    }
-
-                    // Remove checkbox from submission
-                    box.removeAttribute("name");
-                });
-
-                hiddenInput.value = selected.join(", ");
-            });
-        </script>
-
-        <!-- =========================
-         CONTACT INFORMATION
-        ========================== -->
-        <h2 id="contactinfo">Contact Informations</h2>
-        <div class="service-container">
+         <div class="service-container">
             <div class="contact-infos">
                 <h3><span aria-hidden="true">📍 </span> Address</h3>
                 <div class="address-container">
@@ -415,6 +406,35 @@
                 </div>
             </div>
         </div>
+        </section>
+
+        <!-- =========================
+         JAVA SCRIPT
+        ========================== -->
+        <script>
+            const form = document.querySelector("form");
+            const checkboxes = document.querySelectorAll('input[name="service"]');
+            const hiddenInput = document.getElementById("selected-services");
+
+            form.addEventListener("submit", function () {
+                let selected = [];
+
+                checkboxes.forEach(function (box) {
+                    if (box.checked) {
+                        selected.push(box.value);
+                    }
+
+                    // Remove checkbox from submission
+                    box.removeAttribute("name");
+                });
+
+                hiddenInput.value = selected.join(", ");
+            });
+        </script>
+
+        <!-- =========================
+         CONTACT INFORMATION
+        ========================== -->
         <footer class="copyright">
             &copy; 2026 JM Office and School Supplies Trading. All rights reserved.
         </footer>
