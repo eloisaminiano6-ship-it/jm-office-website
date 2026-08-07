@@ -17,6 +17,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
+    background-color: lightgray;
 }
 
 html,
@@ -31,10 +32,6 @@ fieldset {
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: lightgray;
 }
 
 img {
@@ -60,6 +57,45 @@ h3,
 /* ==========================================
   3. REUSABLE COMPONENTS
 ========================================== */
+
+.oglogo a:focus,
+.service-container a:focus,
+.card a:focus,
+.submit:focus,
+.reset:focus {
+    outline: none;
+}
+
+input:focus,
+select:focus,
+.oglogo a:focus img,
+.card a:focus h3,
+.submit button:focus,
+.reset button:focus {
+    outline: none;
+    border: 3px solid #1F4E8C;
+    box-shadow: 0 0 0 4px rgba(31, 78, 140, .18);
+    transition: .25s ease;
+}
+
+.card a:focus h3 {
+    border-radius: 10px;
+}
+
+.panel {
+    background-color: #C9D7E5;
+    border-left: 8px solid #1F4E8C;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,.2);
+
+    padding: 15px;
+
+    color: #1F3A5F;
+    font-family: 'Poppins', sans-serif;
+
+    text-decoration: none;
+    font-size: 25px;
+}
 
 .navcontainer {
     max-width: 1200px;
@@ -96,159 +132,11 @@ h3,
     box-sizing: border-box;
 }
 
-.card {
-    max-width: 370px;
-    width: 90%;
-    height: auto;
-    background: #C9D7E5;
-    border-left: 8px solid #1F4E8C;
-    padding: 20px;
-    transition: .3s ease;
-    border-radius: 10px;
-    margin-bottom: 18px;
-}
-
 .button-options {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-}
-
-.form-contain {
-    max-width: 50%;
-    text-decoration: none;
-    background-color: #C9D7E5;
-    border-left: 8px solid #1F4E8C;
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pill-checkboxes {
-    max-width: 70%;
-    text-decoration: none;
-    background-color: #C9D7E5;
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    padding-bottom: 5px;
-    border-left: 8px solid #1F4E8C;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.form-dropdown {
-    max-width: 90%;
-    text-decoration: none;
-    background-color: #C9D7E5;
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-left: 8px solid #1F4E8C;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.last-option {
-    max-width: 50%;
-    text-decoration: none;
-    background-color: #C9D7E5;
-    padding: 15px;
-    font-size: 25px;
-    border-radius: 12px;
-    color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    border-left: 8px solid #1F4E8C;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-}
-
-.phone-container p,
-.address-container p,
-.email-account a,
-.business-container p,
-.facebook-account a {
-    background-color: #5A8FD8;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 22px;
-    text-align: center;
-    font-weight: 400;
-    color: #C9DDF2;
-    font-family: 'Segoe UI', sans-serif;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 45px;
-}
-
-.address-container p {
-    margin-top: 10px;
-}
-
-.email-account a,
-.business-container p,
-.facebook-account a {
-    text-decoration: none;
-    display: block;
-    margin: 0 auto;
-    transition: all 0.25s ease;
-}
-
-.business-container p {
-    margin-top: 25px;
-}
-
-.email-account a:hover,
-.facebook-account a:hover {
-    transform: translateY(-8px);
-}
-
-.contact-infos h3 {
-    font-size: 34px;
-    color: #333;
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-}
-
-.email-container p,
-.facebook-container p {
-    font-size: 18px;
-    color: #1F4E8C;
-    text-align: center;
-    line-height: 1.7;
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-}
-
-.email-container p {
-    font-size: 1.3rem;
-    margin-top: 10px;
-}
-
-.contact-infos {
-    max-width: 370px;
-    width: 90%;
-    height: auto;
-    background: #C9D7E5;
-    border-left: 8px solid #1F4E8C;
-    padding: 20px;
-    transition: .3s ease;
-    border-radius: 10px;
-    margin-bottom: 18px;
-    display: block;
 }
 
 /* ==========================================
@@ -258,50 +146,50 @@ h3,
 #maintitle {
     box-sizing: border-box;
     color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    padding: 12px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 16px 24px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 12px;
     background: linear-gradient(to bottom, #ffffff, #eef5fc);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 .subtitle {
     color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    padding: 16px;
     text-align: center;
     background: linear-gradient(to right,
             #f3f7fc,
             #e7eff9);
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 .history {
     color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
-    padding: 15px;
+    padding: 16px;
     text-align: center;
     background: linear-gradient(to right,
             #f3f7fc,
             #e7eff9);
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 .para {
     color: #3F3F3F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.6rem;
-    padding: 31px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    padding: 32px 36px;
     text-align: left;
     background-color: #EEF4FB;
     border-left: 8px solid #1F4E8C;
-    border-radius: 5px;
+    border-radius: 12px;
     line-height: 40px;
 }
 
@@ -310,14 +198,14 @@ h3,
 .gallery-para {
     text-align: center;
     color: #1F3A5F;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px;
     font-size: 25px;
     background: linear-gradient(to right,
             #f3f7fc,
             #e7eff9);
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 
 /* ==========================================
@@ -437,7 +325,7 @@ nav{
     color: #dbe8ff;
     margin-top: 4px;
     margin-bottom: 0;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: .5px;
 }
 
@@ -497,12 +385,29 @@ nav{
   7. SERVICES
 ========================================== */
 
+.card {
+    max-width: 370px;
+    width: 90%;
+    height: auto;
+    background:
+    linear-gradient(
+    180deg,
+    #d8e3ef,
+    #c7d6e7
+    );
+    border-left: 8px solid #1F4E8C;
+    padding: 30px;
+    transition: transform .35s ease, box-shadow .35s ease;
+    border-radius: 18px;
+    margin-bottom: 18px;
+}
+
 .card h3 {
-    font-size: 34px;
+    font-size: 28px;
     color: #333;
     text-align: center;
     font-weight: 700;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card p {
@@ -510,7 +415,7 @@ nav{
     color: #2b2b2b;
     text-align: center;
     line-height: 1.7;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -537,13 +442,13 @@ nav{
     padding: 0;
     margin: 0;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     border-left: 6px solid #1F4E8C;
     border-radius: 0 0 12px 12px;
 }
 
 .image-cards:hover {
-    transform: translateY(-8px) scale(1.03);
+    transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
     cursor: pointer;
 }
@@ -561,7 +466,7 @@ nav{
     padding: 18px 22px;
     line-height: 1.6;
     color: #2C2C2C;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
 
@@ -576,7 +481,7 @@ nav{
     background: #DCE8F5;
     border-left: 8px solid #1F4E8C;
     border-radius: 12px;
-    padding: 20px;
+    padding: 24px;
     box-sizing: border-box;
     box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
 }
@@ -584,14 +489,14 @@ nav{
 .location-card h3 {
     color: #1F4E8C;
     margin-bottom: 10px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
 }
 
 .location-card p {
     color: #333;
     line-height: 1.6;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .store-title {
@@ -599,7 +504,7 @@ nav{
     color: #1F4E8C;
     font-size: 2rem;
     margin: 25px 0 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .map-container {
@@ -607,7 +512,7 @@ nav{
     max-width: 900px;
     margin: auto;
     box-sizing: border-box;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .map-container iframe {
@@ -634,28 +539,28 @@ nav{
   10. CONTACT FORM
 ========================================== */
 
-.oglogo a:focus,
-.service-container a:focus,
-.card a:focus,
-.submit:focus,
-.reset:focus {
-    outline: none;
+.form-contain {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-input:focus,
-select:focus,
-.oglogo a:focus img,
-.card a:focus h3,
-.submit button:focus,
-.reset button:focus {
-    outline: none;
-    border: 3px solid #1F4E8C;
-    box-shadow: 0 0 0 4px rgba(31, 78, 140, .18);
-    transition: .25s ease;
+.pill-checkboxes {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding-bottom: 8px;
 }
 
-.card a:focus h3 {
-    border-radius: 10px;
+.form-dropdown {
+    max-width: 90%;
+}
+
+.last-option {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input[type="text"],
@@ -712,7 +617,7 @@ input[type="number"] {
 .pill-checkboxes label,
 .options label {
     display: inline-block;
-    padding: 9px 20px;
+    padding: 8px 24px;
     color: #DCE8F5;
     background-color: #5A8FD8;
     transition: all .3s ease;
@@ -721,7 +626,7 @@ input[type="number"] {
     font-size: 1.3rem;
     cursor: pointer;
     user-select: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
 
@@ -733,7 +638,7 @@ input[type="number"] {
 .options label:hover {
     background: #6C9BD9;
     box-shadow: 0 4px 12px rgba(31, 78, 140, .15);
-    transform: scale(1);
+    transform: translateY(-3px);
 }
 
 .pill-checkboxes label:active,
@@ -757,10 +662,10 @@ select {
     appearance: none;
 
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     font-size: 20px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     background-color: #5A8FD8;
     border-radius: 5px;
@@ -777,8 +682,8 @@ select {
     font-size: 30px;
     height: auto;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
     border: none;
     border-radius: 10px;
     transition: all 0.25s ease;
@@ -793,8 +698,8 @@ select {
     font-size: 30px;
     height: auto;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px;
     border: none;
     border-radius: 10px;
     transition: all 0.25s ease;
@@ -815,59 +720,102 @@ select {
 /* ==========================================
   11. CONTACT INFORMATION
 ========================================== */
-.contact {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to left, gray, dimgray);
-    padding: 9px;
-    transition: .3s ease;
-    border-radius: 10px;
-}
 
-
-.contact a {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 10px;
-    background: linear-gradient(to right, gray, dimgray);
-    padding: 9px;
-    transition: transform 0.25s ease;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, .25);
-    color: aliceblue;
-    white-space: nowrap;
-    margin: 10px;
-}
-
-.contact a:hover {
-    transform: scale(1.05);
-}
-
-.contact p {
-    font-size: 1.5rem;
-    color: ghostwhite;
+.phone-container p,
+.address-container p,
+.email-account a,
+.business-container p,
+.facebook-account a {
+    background-color: #5A8FD8;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 20px;
     text-align: center;
+    font-weight: 400;
+    color: #C9DDF2;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 45px;
 }
 
+.address-container p {
+    margin-top: 10px;
+}
+
+.email-account a,
+.business-container p,
+.facebook-account a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.25s ease;
+}
+
+.business-container p {
+    margin-top: 25px;
+}
+
+.email-account a:hover,
+.facebook-account a:hover {
+    transform: translateY(-9px);
+}
+
+.contact-infos h3 {
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.email-container p,
+.facebook-container p {
+    font-size: 18px;
+    color: #1F4E8C;
+    text-align: center;
+    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.email-container p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.contact-infos {
+    max-width: 370px;
+    width: 90%;
+    height: auto;
+    background: #C9D7E5;
+    border-left: 8px solid #1F4E8C;
+    padding: 24px;
+    transition: transform .3s ease;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    display: block;
+}
 /* ==========================================
   12. FOOTER
 ========================================== */
 footer {
-    background: transparent;
+    background:#1F3A5F;
+
+    padding:30px 20px;
+
+    margin-top:80px;
 }
 
 .copyright {
     width: 100%;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 20px;
+    color:white;
+    font-size:15px;
+    text-align:center;
 }
 
 /* ==========================================
@@ -1038,5 +986,10 @@ footer {
 
     .contact p {
         font-size: 1.1rem;
+    }
+
+    .image-cards img {
+        height: 300px;
+        border-top-right-radius: 12px;
     }
 }
