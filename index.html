@@ -31,15 +31,21 @@
                     <p>Printing & School Supplies</p>
                 </div>
             </div>
-                <ol class="navlinks">
+                <ol class="navlinks" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#location">Location</a></li>
                 <li><a href="#contactform">Contact</a></li>
                 </ol>
+            <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
         </div>
     </nav>
+    
     <header>
     <h1 id="maintitle">JM OFFICE AND SCHOOL SUPPLIES TRADING</h1>
     <p class="subtitle">Quality Printing • Signages • Trophies • School Supplies</p>
@@ -430,6 +436,31 @@
 
                 hiddenInput.value = selected.join(", ");
             });
+
+            const menuBtn = document.getElementById("menu-btn");
+            const navLinks = document.getElementById("nav-links");
+
+menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("show-menu");
+    menuBtn.classList.toggle("active");
+});
+
+const links = document.querySelectorAll("#nav-links a");
+
+links.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        if(window.innerWidth <= 768){
+
+            navLinks.classList.remove("show-menu");
+            menuBtn.classList.remove("active");
+
+        }
+
+    });
+
+});
         </script>
 
         <!-- =========================
