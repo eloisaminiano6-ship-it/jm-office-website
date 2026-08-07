@@ -458,7 +458,7 @@ nav{
 
 .card p {
     font-size: 18px;
-    color: #2F3A45;
+    color: #2b2b2b;
     text-align: center;
     line-height: 1.7;
     font-family: Arial, sans-serif;
@@ -808,7 +808,6 @@ select {
   12. FOOTER
 ========================================== */
 footer {
-    padding: 0;
     background: transparent;
 }
 
@@ -818,6 +817,8 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* ==========================================
