@@ -50,10 +50,13 @@ nav,
 h1,
 h2,
 h3,
-.logo {
+.logo,
+figcaption,
+.card p,
+form,
+#social {
     user-select: none;
 }
-
 /* ==========================================
   3. REUSABLE COMPONENTS
 ========================================== */
@@ -78,8 +81,11 @@ select:focus,
     transition: .25s ease;
 }
 
-.card a:focus h3 {
+.card a:focus-visible h3,
+.card a:hover h3 {
     border-radius: 10px;
+    color: #1F4E8C;
+    transform: scale(1.03);
 }
 
 .panel {
@@ -346,7 +352,7 @@ nav{
     font-weight:700;
     padding:12px 18px;
     border-radius:8px;
-    transition: transform .25s ease;
+    transition: background-color .3s ease, box-shadow .3s ease;
     font-size: 18px;
     letter-spacing: .3px;
 }
@@ -404,10 +410,11 @@ nav{
 
 .card h3 {
     font-size: 28px;
-    color: #333;
+    color:#333;
     text-align: center;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    transition: transform .25s ease, color .25s ease;
 }
 
 .card p {
@@ -442,7 +449,7 @@ nav{
     padding: 0;
     margin: 0;
     overflow: hidden;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     border-left: 6px solid #1F4E8C;
     border-radius: 0 0 12px 12px;
 }
@@ -523,6 +530,9 @@ nav{
 
 .real-location {
     width: 100%;
+    text-align: center;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .real-location img {
@@ -533,6 +543,24 @@ nav{
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.real-location img:hover {
+    background: #5A8FD8;
+    box-shadow:0 0 5px 5px rgba(90,143,216,.25);
+    transform: translateY(-5px);
+}
+
+.real-location a {
+    display: inline-block;
+    max-width: 100%;
+ }
+
+.real-location a:focus {
+    outline: 2px solid #1F4E8C;
+    outline-offset: 5px;
+    border-radius: 10px;
 }
 
 /* ==========================================
@@ -575,6 +603,19 @@ input[type="email"] {
     outline: none;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    transition: border-color .25s ease, outline .25s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    outline: 2px solid #1F4E8C;
+    outline-offset: 3px;
+}
+
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder {
@@ -611,7 +652,8 @@ input[type="number"] {
 
 .pill-checkboxes input[type="checkbox"],
 .options input[type="radio"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .pill-checkboxes label,
@@ -628,6 +670,10 @@ input[type="number"] {
     user-select: none;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
+     transition: background-color .25s ease,
+                box-shadow .25s ease,
+                transform .25s ease,
+                outline-color .25s ease;
 }
 
 .pill-checkboxes fieldset {
@@ -641,14 +687,22 @@ input[type="number"] {
     transform: translateY(-3px);
 }
 
-.pill-checkboxes label:active,
-.options label:active {
-    transform: scale(1.08)
-}
-
 .pill-checkboxes input[type="checkbox"]:checked+label,
 .options input[type="radio"]:checked+label {
     background-color: #1F4E8C;
+}
+
+.pill-checkboxes input[type="checkbox"]:focus-visible + label,
+.options input[type="radio"]:focus-visible + label {
+    outline: 2px solid #1F4E8C;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(31, 78, 140, .18);
+}
+
+.pill-checkboxes input[type="checkbox"]:active + label,
+.options input[type="radio"]:active + label {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(31, 78, 140, .15);
 }
 
 .options input[type="radio"]:checked+label {
@@ -758,6 +812,12 @@ select {
 .email-account a:hover,
 .facebook-account a:hover {
     transform: translateY(-9px);
+}
+
+.email-account a:focus,
+.facebook-account a:focus {
+    outline: 3px solid #1F4E8C;
+    outline-offset: 3px;
 }
 
 .contact-infos h3 {
