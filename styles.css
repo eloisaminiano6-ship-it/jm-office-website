@@ -406,6 +406,17 @@ nav{
     transition: transform .35s ease, box-shadow .35s ease;
     border-radius: 18px;
     margin-bottom: 18px;
+    position: relative;
+}
+
+.popular-star {
+    width: 35px;
+    height: 35px;
+    fill: #FFD43B;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .card h3 {
