@@ -134,6 +134,8 @@ select:focus,
 
     padding: 0 30px;
     position: relative;
+
+    animation: navEntrance 0.8s ease-out;
 }
 
 .service-container {
@@ -185,6 +187,7 @@ select:focus,
     border-radius: 12px;
     background: linear-gradient(to bottom, #ffffff, #eef5fc);
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    animation: titleEntrance 1s ease-out;
 }
 
 .subtitle {
@@ -198,6 +201,9 @@ select:focus,
             var(--gradient-blue));
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    animation: titleEntrance 1s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
 }
 
 .history {
@@ -393,6 +399,12 @@ nav{
   6. HOME / ABOUT
 ========================================== */
 
+.oglogo {
+    animation: titleEntrance 1s ease-out;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
 .oglogo img {
     display: block;
     max-width: 100%;
@@ -464,7 +476,7 @@ nav{
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.03);
     box-shadow: 0 12px 25px rgba(0, 0, 0, .25);
     cursor: pointer;
 }
@@ -914,7 +926,33 @@ footer {
 }
 
 /* ==========================================
-  13. MEDIA QUERIES
+  13. ANIMATIONS
+========================================== */
+@keyframes titleEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ==========================================
+  14. MEDIA QUERIES
 ========================================== */
 @media (max-width: 600px) {
 
