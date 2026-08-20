@@ -90,12 +90,6 @@
             PhilGEPS member, the company proudly serves government projects and creates booths and event installations
             for local festivals and community celebrations.
         </p>
-        <figure class="proprietor">
-            <img src="image/jeff.jpg" alt="Jeffry F. Miniano the owner wearing a suit">
-            <br>
-            <br>
-            <figcaption>The Proprietor, Jeffry F. Miniano</figcaption>
-        </figure>
         </section>
 
 
@@ -103,88 +97,157 @@
          SERVICES SECTION
         ========================== -->
         <section id="services">
-        <h2>Services</h2>
-        <div class="service-container">
+    <h2>Services</h2>
 
-            <div class="card">
-                <svg class="popular-star" viewBox="0 0 24 24" aria-label="Popular service">
+    <!-- Service Categories -->
+    <div class="service-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="printing">Printing</button>
+        <button class="filter-btn" data-category="awards">Awards</button>
+        <button class="filter-btn" data-category="clothing">Clothing</button>
+        <button class="filter-btn" data-category="signages">Signages</button>
+        <button class="filter-btn" data-category="souvenirs">Souvenirs</button>
+        <button class="filter-btn" data-category="others">Others</button>
+    </div>
+
+    <div class="service-container">
+
+        <!-- DTF Printing -->
+        <div class="card" data-category="printing">
+
+            <svg class="popular-star" viewBox="0 0 24 24" aria-label="Popular service">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/>
-                </svg>
+            </svg>
 
-                <a href="https://www.facebook.com/photo.php?fbid=1598099632321442&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">🎨</span> DTF Printing</h3>
-                </a>
-                <p>We offer high-quality DTF (Direct-to-Film) printing for T-shirts, hoodies, tote bags, and more. Enjoy
-                    vibrant colors, durable prints, and sharp details that last through everyday wear and washing.</p>
-            </div>
+            <h3><span aria-hidden="true">🎨</span> DTF Printing</h3>
 
-             <div class="card">
-            
-                <a href="https://www.facebook.com/photo.php?fbid=1510002741131132&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">📝</span> Signages</h3>
-                </a>
-                <p>We design and produce durable outdoor signages that help your business stand out. We make them clear,
-                    professional, and built to last.</p>
-            </div>
+            <p>
+                High-quality DTF printing for T-shirts, hoodies, tote bags, and more.
+            </p>
 
-            <div class="card">
-                <a href="https://www.facebook.com/photo.php?fbid=1564853188979420&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">🖌️</span> Murals</h3>
-                </a>
-                <p>Bring your walls to life with custom mural paintings. We create creative and meaningful designs for
-                    schools, resorts, businesses, and public spaces that leave a long lasting impression.</p>
-            </div>
+            <button class="view-service-btn">View Details</button>
 
-            <div class="card">
-
-                <a href="https://www.facebook.com/photo.php?fbid=1653581553439916&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">☕</span> Customized Mugs</h3>
-                </a>
-                <p>Looking for a unique gift or souvenir? Our customized mugs are perfect for birthdays, company
-                    giveaways, school events, and special occasions.</p>
-            </div>
-
-            <div class="card">
-                <a href="https://www.facebook.com/photo.php?fbid=1624970816300990&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">🥇</span> Medals</h3>
-                </a>
-                <p>Celebrate every achievement with custom-made medals for sports competitions, academic events, and
-                    recognition programs. Designed to make every award memorable.</p>
-            </div>
-
-            <div class="card">
-                <a href="https://www.facebook.com/photo.php?fbid=10232544022010354&set=pb.1452515333.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">🖨️</span> Tarpaulin Printing</h3>
-                </a>
-                <p>We print high-quality tarpaulins for birthdays, graduations, business promotions, school activities,
-                    and other special events.</p>
-            </div>
-
-            <div class="card">
-                <a href="https://www.facebook.com/photo.php?fbid=10230376854272515&set=pb.1452515333.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">🏆</span> Customized Trophies</h3>
-                </a>
-                <p>Celebrate every success with our customized trophies, perfect for sports events, academic
-                    competitions, company recognition, and special awards. </p>
-            </div>
-
-            <div class="card">
-                <a href="https://www.facebook.com/photo.php?fbid=905153821616030&set=pb.100063642626857.-2207520000&type=3"
-                    target="_blank">
-                    <h3><span aria-hidden="true">👔</span> T-Shirt Printing</h3>
-                </a>
-                <p>We create custom T-shirts for schools, organizations, businesses, and special events. Whether you
-                    need uniforms or personalized designs, we make sure every print is made with quality.</p>
-            </div>
         </div>
-        </section>
+
+
+        <!-- Signages -->
+        <div class="card" data-category="signages">
+
+            <h3><span aria-hidden="true">📝</span> Signages</h3>
+
+            <p>
+                Durable and professional outdoor signages designed to help your business stand out.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- Murals -->
+        <div class="card" data-category="others">
+
+            <h3><span aria-hidden="true">🖌️</span> Murals</h3>
+
+            <p>
+                Creative custom mural paintings for schools, resorts, businesses, and public spaces.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- Customized Mugs -->
+        <div class="card" data-category="souvenirs">
+
+            <h3><span aria-hidden="true">☕</span> Customized Mugs</h3>
+
+            <p>
+                Customized mugs perfect for birthdays, company giveaways, school events, and special occasions.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- Medals -->
+        <div class="card" data-category="awards">
+
+            <h3><span aria-hidden="true">🥇</span> Medals</h3>
+
+            <p>
+                Custom-made medals for sports competitions, academic events, and recognition programs.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- Tarpaulin Printing -->
+        <div class="card" data-category="printing">
+
+            <h3><span aria-hidden="true">🖨️</span> Tarpaulin Printing</h3>
+
+            <p>
+                High-quality tarpaulins for birthdays, graduations, business promotions, and school activities.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- Customized Trophies -->
+        <div class="card" data-category="awards">
+
+            <h3><span aria-hidden="true">🏆</span> Customized Trophies</h3>
+
+            <p>
+                Customized trophies for sports events, academic competitions, company recognition, and special awards.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+
+        <!-- T-Shirt Printing -->
+        <div class="card" data-category="clothing">
+
+            <h3><span aria-hidden="true">👔</span> T-Shirt Printing</h3>
+
+            <p>
+                Custom T-shirts for schools, organizations, businesses, and special events.
+            </p>
+
+            <button class="view-service-btn">View Details</button>
+
+        </div>
+
+    </div>
+
+    <div class="service-modal">
+        <div class="service-modal-overlay"></div>
+
+        <div class="service-modal-content">
+            <h2 class="modal-service-title"></h2>
+
+            <button class="modal-close" aria-label="Close service details">
+                &times;
+            </button>
+
+            <img class="modal-service-image" src="" alt="">
+            <p class="modal-service-description"></p>
+
+            <a class="modal-portfolio-link" href="" target="_blank">
+            View Portfolio →
+            </a>
+        </div>
+    </div>
+</section>
 
         <!-- =========================
          GALLERY SECTION
