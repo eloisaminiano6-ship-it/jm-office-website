@@ -532,7 +532,7 @@ nav{
 }
 
 .service-modal {
-    display: flex;
+    display: none;
     position: fixed;
     inset: 0;
     align-items: center;
@@ -550,6 +550,7 @@ nav{
     z-index: 2001;
     position: relative;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    display: none;
 } 
 
 .modal-close {
